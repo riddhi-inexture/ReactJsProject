@@ -5,7 +5,7 @@ const TableBody = (props) => {
         return(
             <tr key={index}>
                 <td>{row.name}</td>
-                <td>{row.age}</td>
+                <td>{row.job}</td>
                 <td> <button onClick={()=> props.removeName(index)}>Delete</button> </td>
             </tr>
         )
@@ -29,7 +29,7 @@ const TableHead = () => {
       </thead>
       )
 }
-const Table = (props) =>{
+const Table = (props) => {
     console.log(props);
     const {names, removeName} = props
     return(
